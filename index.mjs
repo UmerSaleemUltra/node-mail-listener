@@ -3,14 +3,15 @@ import { simpleParser } from 'mailparser';
 
 const config = {
     imap: {
-        user: 'hello@umersaleem.com',  // Replace with your email
-        password: '@Umer2024', // Replace with your email password
+        user: 'your-email@yourdomain.com',  // Replace with your Hostinger email
+        password: 'your-email-password',    // Replace with your Hostinger email password
         host: 'imap.hostinger.com',
         port: 993,
         tls: true,
         authTimeout: 3000
     }
 };
+
 async function checkEmails() {
     try {
         const connection = await imaps.connect(config);
